@@ -129,3 +129,18 @@ section of composer.json:
 ### How do I switch from packagist.drupal-composer.org to packages.drupal.org?
 
 Follow the instructions in the [documentation on drupal.org](https://www.drupal.org/docs/develop/using-composer/using-packagesdrupalorg).
+
+
+### Comment utiliser Composer et Drush :
+
+Utilisation Composer + Drush pour ajouter des modules à drupal:
+Dans le dossier de base de Drupal :
+Composer est comme npm, permet de gérer les fichiers/dossiers
+composer                    Donne toutes les commandes
+composer require drupal/redirect        Installe le module “redirect”
+composer install                Quand on reçoit un git, installe tous les composants
+
+Dans le dossier /web :
+Drush donne la possibilité d'utiliser une interface commande pour certains projets
+drush                        Donne toutes les commandes
+drush status                    Statut du drupal
