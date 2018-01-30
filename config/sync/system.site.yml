@@ -1,0 +1,14 @@
+uuid: 97544c6f-f86c-41b0-bc84-e3321bf123d0
+name: pointes-aux-ames
+mail: contact@pointes-aux-ames.fr
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: fr
+default_langcode: fr
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

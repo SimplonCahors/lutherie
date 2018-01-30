@@ -1,0 +1,14 @@
+uuid: e4924d7b-06f8-4e8c-a151-47bb3a763d81
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Retours utilisateurs sur le site web'
+recipients:
+  - contact@pointes-aux-ames.fr
+reply: ''
+weight: 0
+message: 'Votre message a été envoyé.'
+redirect: ''
