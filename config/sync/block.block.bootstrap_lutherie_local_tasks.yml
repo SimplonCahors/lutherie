@@ -1,0 +1,22 @@
+uuid: d876b58f-1bda-4cb8-af67-4bbe7012349d
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - bootstrap_lutherie
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: bootstrap_lutherie_local_tasks
+theme: bootstrap_lutherie
+region: content
+weight: -8
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Onglets
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

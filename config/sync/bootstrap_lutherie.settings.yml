@@ -1,0 +1,20 @@
+schemas:
+  bootstrap: 8000
+  bootstrap_lutherie: 8000
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: 'http://drupal.sandbox.dev/themes/contrib/bootstrap_lutherie/favicon.ico'
+  use_default: 1
+features:
+  comment_user_picture: 1
+  comment_user_verification: 1
+  favicon: 1
+  node_user_picture: 1
+logo:
+  path: ''
+  url: ''
+  use_default: 1
+cdn_jsdelivr_theme: bootstrap_theme
+table_responsive: '-1'
+table: ''
