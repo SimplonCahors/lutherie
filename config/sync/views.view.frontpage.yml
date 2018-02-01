@@ -3,10 +3,12 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.rss
-    - core.entity_view_mode.node.teaser
+    - taxonomy.vocabulary.tags
+  content:
+    - 'taxonomy_term:tags:00f17f13-7f0a-45b7-b5b7-44b355bd3c4c'
   module:
     - node
+    - taxonomy
     - user
 _core:
   default_config_hash: GNfx9kN8-0_KgQ-xf3fjdXCCzZwXCI8T0IPFW8SIe7g
@@ -74,65 +76,16 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       filters:
-        promote:
-          admin_label: ''
-          expose:
-            description: ''
-            identifier: ''
-            label: ''
-            multiple: false
-            operator: ''
-            operator_id: ''
-            remember: false
-            remember_roles:
-              authenticated: authenticated
-            required: false
-            use_operator: false
-          exposed: false
-          field: promote
-          group: 1
-          group_info:
-            default_group: All
-            default_group_multiple: {  }
-            description: ''
-            group_items: {  }
-            identifier: ''
-            label: ''
-            multiple: false
-            optional: true
-            remember: false
-            widget: select
-          group_type: group
-          id: promote
-          is_grouped: false
-          operator: '='
-          relationship: none
-          table: node_field_data
-          value: '1'
-          plugin_id: boolean
-          entity_type: node
-          entity_field: promote
-        status:
-          expose:
-            operator: ''
-          field: status
-          group: 1
-          id: status
-          table: node_field_data
-          value: '1'
-          plugin_id: boolean
-          entity_type: node
-          entity_field: status
-        langcode:
-          id: langcode
-          table: node_field_data
-          field: langcode
+        tid:
+          id: tid
+          table: taxonomy_index
+          field: tid
           relationship: none
           group_type: group
           admin_label: ''
-          operator: in
+          operator: or
           value:
-            '***LANGUAGE_language_content***': '***LANGUAGE_language_content***'
+            - 2
           group: 1
           exposed: false
           expose:
@@ -160,30 +113,17 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          plugin_id: language
-          entity_type: node
-          entity_field: langcode
+          reduce_duplicates: false
+          type: textfield
+          limit: true
+          vid: tags
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
       pager:
-        type: full
+        type: none
         options:
-          items_per_page: 10
           offset: 0
-          id: 0
-          total_pages: 0
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Éléments par page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- Tout -'
-            offset: false
-            offset_label: Décalage
-          tags:
-            previous: '‹ Précédent'
-            next: 'Suivant ›'
-            first: '« Premier'
-            last: 'Dernier »'
-          quantity: 9
       query:
         type: views_query
         options:
@@ -195,37 +135,9 @@ display:
       row:
         type: 'entity:node'
         options:
-          view_mode: teaser
-      sorts:
-        sticky:
-          admin_label: ''
-          expose:
-            label: ''
-          exposed: false
-          field: sticky
-          group_type: group
-          id: sticky
-          order: DESC
           relationship: none
-          table: node_field_data
-          plugin_id: boolean
-          entity_type: node
-          entity_field: sticky
-        created:
-          field: created
-          id: created
-          order: DESC
-          table: node_field_data
-          plugin_id: date
-          relationship: none
-          group_type: group
-          admin_label: ''
-          exposed: false
-          expose:
-            label: ''
-          granularity: second
-          entity_type: node
-          entity_field: created
+          view_mode: default
+      sorts: {  }
       style:
         type: default
         options:
@@ -240,6 +152,9 @@ display:
       fields: {  }
       arguments: {  }
       display_extenders: {  }
+      filter_groups:
+        operator: AND
+        groups: {  }
     display_plugin: default
     display_title: Maître
     id: default
@@ -247,42 +162,7 @@ display:
     cache_metadata:
       contexts:
         - 'languages:language_interface'
-        - url.query_args
-        - 'user.node_grants:view'
-        - user.permissions
-      max-age: -1
-      tags: {  }
-  feed_1:
-    display_plugin: feed
-    id: feed_1
-    display_title: Flux
-    position: 2
-    display_options:
-      sitename_title: true
-      path: rss.xml
-      displays:
-        page_1: page_1
-        default: ''
-      pager:
-        type: some
-        options:
-          items_per_page: 10
-          offset: 0
-      style:
-        type: rss
-        options:
-          description: ''
-          grouping: {  }
-          uses_fields: false
-      row:
-        type: node_rss
-        options:
-          relationship: none
-          view_mode: rss
-      display_extenders: {  }
-    cache_metadata:
-      contexts:
-        - 'languages:language_interface'
+        - user
         - 'user.node_grants:view'
         - user.permissions
       max-age: -1
@@ -291,6 +171,9 @@ display:
     display_options:
       path: node
       display_extenders: {  }
+      title: ''
+      defaults:
+        title: false
     display_plugin: page
     display_title: Page
     id: page_1
@@ -298,7 +181,7 @@ display:
     cache_metadata:
       contexts:
         - 'languages:language_interface'
-        - url.query_args
+        - user
         - 'user.node_grants:view'
         - user.permissions
       max-age: -1

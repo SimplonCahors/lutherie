@@ -11,7 +11,7 @@ _core:
 id: bootstrap_lutherie_branding
 theme: bootstrap_lutherie
 region: navigation
-weight: -7
+weight: -3
 provider: null
 plugin: system_branding_block
 settings:
@@ -19,7 +19,7 @@ settings:
   label: 'Marque du site'
   provider: system
   label_display: '0'
-  use_site_logo: true
+  use_site_logo: false
   use_site_name: true
-  use_site_slogan: true
+  use_site_slogan: false
 visibility: {  }
