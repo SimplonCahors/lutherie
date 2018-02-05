@@ -1,6 +1,6 @@
 uuid: f8432170-9bdc-4ccc-9763-35bef02b54a7
 langcode: fr
-status: true
+status: false
 dependencies:
   module:
     - help
@@ -11,7 +11,7 @@ _core:
 id: bootstrap_lutherie_help
 theme: bootstrap_lutherie
 region: content
-weight: -7
+weight: -6
 provider: null
 plugin: help_block
 settings:

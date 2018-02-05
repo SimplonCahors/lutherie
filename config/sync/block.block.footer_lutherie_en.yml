@@ -1,0 +1,33 @@
+uuid: 09b1608e-117d-4789-9431-1f2e0fcfa437
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:375b1dc1-ff3d-4670-8a97-086124664b55'
+  module:
+    - block_content
+    - language
+  theme:
+    - bootstrap_lutherie
+id: footer_lutherie_en
+theme: bootstrap_lutherie
+region: footer
+weight: -9
+provider: null
+plugin: 'block_content:375b1dc1-ff3d-4670-8a97-086124664b55'
+settings:
+  id: 'block_content:375b1dc1-ff3d-4670-8a97-086124664b55'
+  label: footer_lutherie_en
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  language:
+    id: language
+    langcodes:
+      en: en
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'

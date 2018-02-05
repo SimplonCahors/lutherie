@@ -9,7 +9,7 @@ _core:
 id: bootstrap_lutherie_local_tasks
 theme: bootstrap_lutherie
 region: content
-weight: -7
+weight: -8
 provider: null
 plugin: local_tasks_block
 settings:

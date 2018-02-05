@@ -2,19 +2,19 @@ schemas:
   bootstrap: 8000
   bootstrap_lutherie: 8000
 favicon:
-  mimetype: image/vnd.microsoft.icon
-  path: ''
+  mimetype: image/png
+  path: 'public://pointes_aux_ames_favicon.png'
   url: 'http://drupal.sandbox.dev/themes/contrib/bootstrap_lutherie/favicon.ico'
-  use_default: true
+  use_default: false
 features:
   comment_user_picture: true
   comment_user_verification: true
   favicon: true
   node_user_picture: true
 logo:
-  path: ''
+  path: 'public://cropped-sheldon-music-favicon_0.png'
   url: ''
-  use_default: true
+  use_default: false
 cdn_jsdelivr_theme: bootstrap_theme
 table_responsive: '-1'
 table: ''

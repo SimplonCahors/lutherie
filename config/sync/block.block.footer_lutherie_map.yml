@@ -1,0 +1,25 @@
+uuid: c929c708-8327-4340-92c9-6e80dd33996f
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:82c8ae53-0ff1-4f37-8b8c-7bf895b11f76'
+  module:
+    - block_content
+  theme:
+    - bootstrap_lutherie
+id: footer_lutherie_map
+theme: bootstrap_lutherie
+region: footer
+weight: -6
+provider: null
+plugin: 'block_content:82c8ae53-0ff1-4f37-8b8c-7bf895b11f76'
+settings:
+  id: 'block_content:82c8ae53-0ff1-4f37-8b8c-7bf895b11f76'
+  label: footer_lutherie_map
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

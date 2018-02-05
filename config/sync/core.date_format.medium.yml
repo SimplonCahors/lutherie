@@ -1,5 +1,5 @@
 uuid: dfcbb3b3-9179-482f-98b7-4de40fa94aeb
-langcode: fr
+langcode: und
 status: true
 dependencies: {  }
 _core:
@@ -7,4 +7,4 @@ _core:
 id: medium
 label: 'Date moyenne par défaut'
 locked: false
-pattern: 'D d/m/Y - H:i'
+pattern: 'l j F Y'
