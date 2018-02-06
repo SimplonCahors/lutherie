@@ -125,7 +125,7 @@ menu.menu--main-nav.nav{
   background-color: black !important;
 }
 
-.menu--main-nav.nav li.expanded.dropdown.open a.dropdown-toggle{
+.menu--main-nav.nav li.expanded.dropdown.open a.dropdown-toggle,.menu--main.nav.navbar-nav li.expanded.dropdown.active a.dropdown-toggle{
   background-color: rgb(32, 32, 32) !important;
   background-image: none !important;
 }
@@ -217,7 +217,7 @@ ul.links{
 
 /*TOCHANGE lien drapeau + size maybe*/
 .block-language-blocklanguage-interface.clearfix ul.links li.en{
-  background-image: url("http://img.freeflagicons.com/thumb/glossy_round_icon/united_kingdom/united_kingdom_640.png");
+  background-image: url("../images/united_kingdom_640.png");
   background-repeat: no-repeat;
   background-size: cover;
   color: transparent;
@@ -225,7 +225,7 @@ ul.links{
 
 /*TOCHANGE lien drapeau + size maybe*/
 .block-language-blocklanguage-interface.clearfix ul.links li.fr{
-  background-image: url("http://img.freeflagicons.com/thumb/round_icon/france/france_640.png");
+  background-image: url("../images/france_640.png");
   background-repeat: no-repeat;
   background-size: cover;
   color: transparent;  
