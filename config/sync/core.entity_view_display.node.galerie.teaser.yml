@@ -1,0 +1,21 @@
+uuid: abb7971a-dafa-4650-9013-255922f31201
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.galerie.body
+    - node.type.galerie
+  module:
+    - user
+id: node.galerie.teaser
+targetEntityType: node
+bundle: galerie
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  body: true
+  langcode: true

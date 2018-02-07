@@ -1,0 +1,38 @@
+uuid: 650ce299-da32-4508-9a56-b734849265fb
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.service_page.body
+    - field.field.node.service_page.field_images_field
+    - node.type.service_page
+  module:
+    - image
+    - text
+    - user
+id: node.service_page.default
+targetEntityType: node
+bundle: service_page
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_images_field:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

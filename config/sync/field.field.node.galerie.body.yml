@@ -1,0 +1,22 @@
+uuid: 45db594e-041e-4db5-970e-4df0cd83910d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.galerie
+  module:
+    - text
+id: node.galerie.body
+field_name: body
+entity_type: node
+bundle: galerie
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

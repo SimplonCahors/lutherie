@@ -1,0 +1,38 @@
+uuid: cebe5014-3aaf-46d7-98eb-d693f17104c2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.galerie.body
+    - field.field.node.galerie.field_carousel
+    - node.type.galerie
+  module:
+    - image
+    - text
+    - user
+id: node.galerie.default
+targetEntityType: node
+bundle: galerie
+mode: default
+content:
+  body:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_carousel:
+    weight: 105
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

@@ -6,12 +6,8 @@ dependencies:
     - core.entity_view_mode.node.full
     - node.type.article
     - system.menu.main
-    - taxonomy.vocabulary.tags
-  content:
-    - 'taxonomy_term:tags:9d817f24-ac5b-49cc-b8ac-3750b33a54a6'
   module:
     - node
-    - taxonomy
     - user
 id: actualites
 label: actualites
@@ -150,14 +146,6 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
-        tid:
-          id: tid
-          table: taxonomy_index
-          field: tid
-          value:
-            - 1
-          vid: tags
-          plugin_id: taxonomy_index_tid
       sorts:
         created:
           id: created
@@ -187,7 +175,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -202,10 +189,10 @@ display:
       menu:
         type: normal
         title: Actualités
-        description: ''
+        description: 'Les actualités de l''atelier'
         expanded: false
         parent: ''
-        weight: -47
+        weight: -46
         context: '0'
         menu_name: main
         enabled: true
@@ -215,7 +202,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }

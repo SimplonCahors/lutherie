@@ -1,0 +1,18 @@
+uuid: ab18503c-7c51-4c4d-a9c4-3745bddacf01
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Presentation
+type: presentation
+description: 'Template pour la page "Qui sommes-nous ?"'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

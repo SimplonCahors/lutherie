@@ -1,0 +1,16 @@
+uuid: a144dfd8-3ac1-481c-a265-8385ed484831
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.galerie
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.galerie
+target_entity_type_id: node
+target_bundle: galerie
+default_langcode: und
+language_alterable: true

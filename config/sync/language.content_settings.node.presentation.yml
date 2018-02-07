@@ -1,0 +1,16 @@
+uuid: 0f6204b6-6c25-4192-b043-029d35de4493
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.presentation
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.presentation
+target_entity_type_id: node
+target_bundle: presentation
+default_langcode: und
+language_alterable: true

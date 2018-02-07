@@ -4,7 +4,6 @@
 body{
   font-family: 'Lato' !important;
   margin-top: 0 !important;
-  /* background-color: black;  */
   color:rgb(172, 172, 172);
   /* background-image: url("https://static1.squarespace.com/static/58c6c0ce1e5b6c367872450b/58c6dab4440243602d5bef83/58dd5a96a5790a2b20301657/1490901654788/goffriller-violin-color-sam-hymas.jpg"); */
   background-color: black;
@@ -125,9 +124,14 @@ menu.menu--main-nav.nav{
   background-color: black !important;
 }
 
-.menu--main-nav.nav li.expanded.dropdown.open a.dropdown-toggle,.menu--main.nav.navbar-nav li.expanded.dropdown.active a.dropdown-toggle{
+.menu--main-nav.nav li.expanded.dropdown.open a.dropdown-toggle{
   background-color: rgb(32, 32, 32) !important;
   background-image: none !important;
+}
+
+.menu--main.nav.navbar-nav li.expanded.dropdown.active a.dropdown-toggle{
+  background-image: none !important;
+  background-color: transparent !important;
 }
 
 .expanded.dropdown.open ul.dropdown-menu li a.is-active{
@@ -163,6 +167,17 @@ menu.menu--main-nav.nav{
   background-size: cover; */
 }
 
+div.field--label{
+  display: none;
+}
+
+.author{
+  display: none;
+}
+
+.view-content > div{
+  padding-bottom: 50px;
+}
 /*Body of Homepage*/
 
 .views-row article.article.default.clearfix h2,.article.default.clearfix footer div.author,.field--name-field-tags.field--type-entity-reference.field--label-above,.page-header{
@@ -170,7 +185,6 @@ menu.menu--main-nav.nav{
 }
 
 /*Carousel*/
-/*TOCHANGE title of id and classes*/
 
 .carousel{
   width: 50%;
@@ -215,7 +229,6 @@ ul.links{
   padding-bottom: 15px;
 }
 
-/*TOCHANGE lien drapeau + size maybe*/
 .block-language-blocklanguage-interface.clearfix ul.links li.en{
   background-image: url("../images/united_kingdom_640.png");
   background-repeat: no-repeat;
@@ -223,7 +236,6 @@ ul.links{
   color: transparent;
 }
 
-/*TOCHANGE lien drapeau + size maybe*/
 .block-language-blocklanguage-interface.clearfix ul.links li.fr{
   background-image: url("../images/france_640.png");
   background-repeat: no-repeat;

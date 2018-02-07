@@ -1,0 +1,18 @@
+uuid: 68140750-a1fd-4b1e-81ac-d3075fa88001
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Service page'
+type: service_page
+description: 'Template pour une page de la catégorie Service'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

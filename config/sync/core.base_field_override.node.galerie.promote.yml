@@ -1,0 +1,22 @@
+uuid: 5484c26b-7dca-4123-a018-1fcb10c0148f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.galerie
+id: node.galerie.promote
+field_name: promote
+entity_type: node
+bundle: galerie
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
