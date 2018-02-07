@@ -1,8 +1,10 @@
  @import url('https://fonts.googleapis.com/css?family=Tangerine');
  @import url('https://fonts.googleapis.com/css?family=Lato');
+ @import url('https://fonts.googleapis.com/css?family=Noto+Serif');
 
 body{
-  font-family: 'Lato' !important;
+  font-family: 'Noto Serif', serif !important;
+/*font-family: 'Lato' !important;*/
   margin-top: 0 !important;
   color:rgb(172, 172, 172);
   /* background-image: url("https://static1.squarespace.com/static/58c6c0ce1e5b6c367872450b/58c6dab4440243602d5bef83/58dd5a96a5790a2b20301657/1490901654788/goffriller-violin-color-sam-hymas.jpg"); */
@@ -180,9 +182,9 @@ div.field--label{
 }
 /*Body of Homepage*/
 
-.views-row article.article.default.clearfix h2,.article.default.clearfix footer div.author,.field--name-field-tags.field--type-entity-reference.field--label-above,.page-header{
+/* .views-row article.article.default.clearfix h2,.article.default.clearfix footer div.author,.field--name-field-tags.field--type-entity-reference.field--label-above,.page-header{
   display: none;
-}
+} */
 
 /*Carousel*/
 
