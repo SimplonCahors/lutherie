@@ -162,7 +162,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: actualites
+      title: Actualités
       header: {  }
       footer: {  }
       empty: {  }

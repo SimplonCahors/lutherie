@@ -1,20 +1,20 @@
  @import url('https://fonts.googleapis.com/css?family=Tangerine');
  @import url('https://fonts.googleapis.com/css?family=Lato');
- @import url('https://fonts.googleapis.com/css?family=Noto+Serif');
+ @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 body{
-  font-family: 'Noto Serif', serif !important;
+  font-family: 'Raleway', sans-serif !important;
 /*font-family: 'Lato' !important;*/
   margin-top: 0 !important;
   color:rgb(172, 172, 172);
   /* background-image: url("https://static1.squarespace.com/static/58c6c0ce1e5b6c367872450b/58c6dab4440243602d5bef83/58dd5a96a5790a2b20301657/1490901654788/goffriller-violin-color-sam-hymas.jpg"); */
   background-color: black;
   /* background-image: url("http://bacasable.dev/sites/default/files/2018-02/pointes_aux_ames_bg1m.png"); */
-  height: 500px;
+  /*height: 500px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover;*/
 }
 
 .container{
@@ -32,17 +32,22 @@ header{
   z-index: 100 !important;
   display: flex;
   flex-direction: column;
-  background-color: black !important;
+  /*background-color: black !important;*/
   max-width: 100% !important;
   padding-left: 10vw !important;
   padding-right: 10vw !important;
+  background-image: url("../images/16.JPG") !important;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .navbar-default{
-  background-color: black !important;
+  /*background-color: black !important;*/
   border-color: transparent !important; 
   border-bottom-color: rgb(148, 148, 148) !important;
-  background-image: none !important; 
+  /*background-image: none !important;*/ 
 }
 
 .navbar-brand{
@@ -94,30 +99,30 @@ menu.menu--main-nav.nav{
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: rgb(199, 199, 199) !important;
+  color: rgb(243, 243, 243) !important;
 }
 
 .menu.menu--main-nav.nav li a{
-  color: rgb(199, 199, 199) !important;
+  color: rgb(243, 243, 243) !important;
   padding: 15px !important;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-  color: rgb(214, 213, 213) !important;
+  color: rgb(255, 255, 255) !important;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-  color: rgb(214, 213, 213) !important;
+  color: rgb(255, 255, 255) !important;
 }
 
 /*NAV Deployed*/
 
 .navbar-default .navbar-nav > .open > a, .navbar-default {
-  color: rgb(214, 213, 213) !important;  
+  color: rgb(243, 243, 243) !important; 
 }
 
 .navbar-default .navbar-nav > .open > a,menu--main-nav.nav li.expanded.dropdown.open a:hover{
-  background-color: rgb(32, 32, 32) !important;
+  background-color: rgba(32, 32, 32, 0.603) !important;
   background-image: none !important;
 }
 
@@ -142,7 +147,7 @@ menu.menu--main-nav.nav{
 
 .nav > li > a:hover, .nav > li > a:focus {
   text-decoration: none;
-  background-color: black !important;
+  background-color: rgba(32, 32, 32, 0.603) !important;
 }
 
 .navbar-nav > li > .dropdown-menu,.dropdown.open ul.dropdown-menu{
@@ -181,6 +186,10 @@ div.field--label{
   padding-bottom: 50px;
 }
 /*Body of Homepage*/
+
+html.js body.path-node.page-node-type-homepage.has-glyphicons div.main-container.container.js-quickedit-main-content div.row section.col-sm-12 div.region.region-content h1.page-header{
+  display: none;
+}
 
 /* .views-row article.article.default.clearfix h2,.article.default.clearfix footer div.author,.field--name-field-tags.field--type-entity-reference.field--label-above,.page-header{
   display: none;
@@ -257,6 +266,15 @@ html.js body.path-frontpage.has-glyphicons header#navbar.navbar.navbar-default.c
 
 
 /*footer*/
+
+footer{
+  background-image: url("../images/16.JPG") !important;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(243, 243, 243) !important;
+}
 
 .region-footer{
   display: flex;
