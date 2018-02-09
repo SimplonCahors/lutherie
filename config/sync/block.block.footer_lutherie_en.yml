@@ -19,7 +19,7 @@ settings:
   id: 'block_content:375b1dc1-ff3d-4670-8a97-086124664b55'
   label: footer_lutherie_en
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full

@@ -19,7 +19,7 @@ settings:
   id: 'block_content:fe4000a8-a257-4716-a70b-a63a53cbed5b'
   label: footer_infos_fr_brive
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full

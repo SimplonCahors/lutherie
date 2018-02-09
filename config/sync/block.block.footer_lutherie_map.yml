@@ -18,7 +18,7 @@ settings:
   id: 'block_content:82c8ae53-0ff1-4f37-8b8c-7bf895b11f76'
   label: footer_lutherie_map
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full
