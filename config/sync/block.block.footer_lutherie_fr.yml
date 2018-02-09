@@ -12,7 +12,7 @@ dependencies:
 id: footer_lutherie_fr
 theme: bootstrap_lutherie
 region: footer
-weight: -8
+weight: -5
 provider: null
 plugin: 'block_content:44c46977-0dc9-4c94-913c-54677510b1a5'
 settings:

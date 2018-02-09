@@ -1,0 +1,25 @@
+uuid: 5620e4dd-ac86-4f57-96cd-dccfc89311cc
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2c8dd52f-bf76-493e-8138-fd8049c43e3e'
+  module:
+    - block_content
+  theme:
+    - bootstrap_lutherie
+id: footer_map_brive
+theme: bootstrap_lutherie
+region: footer
+weight: -1
+provider: null
+plugin: 'block_content:2c8dd52f-bf76-493e-8138-fd8049c43e3e'
+settings:
+  id: 'block_content:2c8dd52f-bf76-493e-8138-fd8049c43e3e'
+  label: footer_map_brive
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

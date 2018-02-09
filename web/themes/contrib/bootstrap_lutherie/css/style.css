@@ -23,6 +23,15 @@ body{
   padding-right: 0;
 }
 
+
+
+.navbar-brand,.article.is-promoted.full.clearfix h2 a,.field--label-hidden.field--item div#footer_infos p a{
+  color: rgb(255, 217, 94) !important;
+}
+.navbar-brand:hover,.article.is-promoted.full.clearfix h2 a:hover,.field--label-hidden.field--item div#footer_infos p a:hover{
+  color: rgb(252, 223, 129) !important;  
+}
+
 /*HEADER*/
 
 header{
@@ -55,11 +64,8 @@ header{
   font-family: 'Tangerine' !important;
   font-size: 50px;
   white-space: nowrap;
-  color: rgb(255, 217, 94) !important;
 }
-.navbar-brand:hover{
-  color: rgb(252, 223, 129) !important;  
-}
+
 /*Container lang + navbar*/
 
 .region.region-navigation-collapsible{
@@ -129,6 +135,8 @@ menu.menu--main-nav.nav{
 .active a.is-active,.menu.menu--main-nav.nav li a.is-active{
   background-image: none !important;
   background-color: black !important;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .menu--main-nav.nav li.expanded.dropdown.open a.dropdown-toggle{
@@ -162,7 +170,7 @@ menu.menu--main-nav.nav{
 /*BODY*/
 
 .main-container{
-  font-size: 20px !important;
+  font-size: 1.2em;
   color: rgb(247, 247, 247);
   padding-left: 10vw;
   padding-right: 10vw;
@@ -197,10 +205,16 @@ html.js body.path-node.page-node-type-homepage.has-glyphicons div.main-container
 
 /*Carousel*/
 
-.carousel{
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
+.carousel,div.content>.img-responsive,.field--type-image{
+  margin-top: 1.2em !important;
+  width: 50% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+@media screen and (max-width: 780px){
+  .carousel,div.content>.img-responsive,.field--type-image{
+    width: 80% !important;
+  }
 }
 
 .carousel-indicators{
@@ -210,6 +224,27 @@ html.js body.path-node.page-node-type-homepage.has-glyphicons div.main-container
 
 .carousel-caption p{
   font-size: 15px;
+}
+
+/*Page luthier*/
+
+.align-left{
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.align-right{
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 780px){
+  .align-left,.align-right{
+    float: none;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /*FOOTER*/
@@ -276,6 +311,11 @@ footer{
   color: rgb(243, 243, 243) !important;
 }
 
+region-footer>div{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .region-footer{
   display: flex;
   flex-direction: row;
@@ -303,8 +343,8 @@ footer h2{
   color: rgb(255, 217, 94) !important;
 }*/
 
-@media screen and (max-width: 530px){
-  #block-footer-lutherie-map{
+@media screen and (max-width: 1120px){
+  #block-footer-lutherie-map,#block-footer-map-brive{
     display: none;
   }
 }

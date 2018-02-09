@@ -9,7 +9,7 @@ _core:
 id: bootstrap_lutherie_local_actions
 theme: bootstrap_lutherie
 region: content
-weight: -9
+weight: -5
 provider: null
 plugin: local_actions_block
 settings:

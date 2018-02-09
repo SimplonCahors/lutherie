@@ -15,6 +15,7 @@
 /web/sites/*/files/*
 
 !/web/sites/default/files/2018-02
+!/web/sites/default/files/inline-images
 
 # Ignore SimpleTest multi-site environment.
 /web/sites/simpletest

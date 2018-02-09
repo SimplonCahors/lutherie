@@ -12,7 +12,7 @@ dependencies:
 id: mainnav
 theme: bootstrap_lutherie
 region: navigation_collapsible
-weight: -7
+weight: -4
 provider: null
 plugin: 'system_menu_block:main-nav'
 settings:

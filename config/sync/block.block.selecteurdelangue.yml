@@ -8,8 +8,8 @@ dependencies:
     - bootstrap_lutherie
 id: selecteurdelangue
 theme: bootstrap_lutherie
-region: footer
-weight: -7
+region: navigation_collapsible
+weight: -6
 provider: null
 plugin: 'language_block:language_interface'
 settings:
