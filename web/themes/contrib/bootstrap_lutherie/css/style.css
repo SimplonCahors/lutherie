@@ -92,8 +92,16 @@ menu.menu--main-nav.nav{
   display: flex !important;
 }
 
-#navbar.navbar.navbar-default.container div#navbar-collapse.navbar-collapse.collapse div.region.region-navigation-collapsible nav#block-mainnav ul.menu.menu--main-nav.nav{
+.menu--main-nav.nav,.menu.menu--main.nav.navbar-nav{
   display: flex !important;
+}
+
+
+
+@media screen and (max-width: 766px){
+  .menu--main-nav.nav,.menu.menu--main.nav.navbar-nav{
+    flex-direction: column!important;
+  }
 }
 
 .navbar-nav{
@@ -105,7 +113,7 @@ menu.menu--main-nav.nav{
   color: rgb(243, 243, 243) !important;
 }
 
-.menu.menu--main-nav.nav li a{
+.menu.menu--main-nav.nav > li > a{
   color: rgb(243, 243, 243) !important;
   padding: 15px !important;
 }
@@ -160,9 +168,51 @@ menu.menu--main-nav.nav{
   border: none;
 }
 
-.dropdown-menu > li > a{
+.dropdown-menu>li>a{
+  color: rgb(170, 170, 170) !important; 
+  background-color: transparent !important;
+  background-image: none !important;
+  padding: 15px !important;
+}
+
+.dropdown-menu>li>a:hover{
+  color: rgb(255, 255, 255) !important; 
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+.dropdown-menu>.active>.is-active{
+  color: rgb(121, 121, 121) !important; 
+  background-color: transparent !important;
+  background-image: none !important;
+  padding: 15px !important;
+}
+
+.dropdown-menu>.active>.is-active:hover{
+  color: rgb(255, 255, 255) !important; 
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* .dropdown-menu > li > a{
   color: rgb(214, 213, 213) !important;  
 }
+
+.dropdown-menu > li > a:hover{
+  color: #262626 !important; 
+}
+
+.dropdown-menu > li > a:active{
+  color: rgb(214, 213, 213) !important;  
+}
+
+.is-active{
+  color: rgb(214, 213, 213) !important;  
+}
+
+.is-active:hover{
+  color: rgb(214, 213, 213) !important;  
+} */
 
 /*BODY*/
 
