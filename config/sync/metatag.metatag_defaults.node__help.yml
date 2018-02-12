@@ -1,0 +1,8 @@
+uuid: 88707cf1-eb09-4382-9a17-68b9981bc0cf
+langcode: fr
+status: true
+dependencies: {  }
+id: node__help
+label: 'Contenu: help'
+tags:
+  robots: 'noindex, nofollow, noarchive, nosnippet, noodp, noydir, noimageindex, notranslate'

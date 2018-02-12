@@ -1,0 +1,27 @@
+uuid: f08a9780-f525-4ce3-9467-05ca17ef8beb
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.help.body
+    - node.type.help
+  module:
+    - text
+    - user
+id: node.help.default
+targetEntityType: node
+bundle: help
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,17 @@
+uuid: f2fad800-d649-4d23-8b20-eaf8cc38685f
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: help
+type: help
+description: 'Template pour la page documentation non indexée'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false
