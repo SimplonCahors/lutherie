@@ -300,6 +300,12 @@ html.js body.path-node.page-node-type-homepage.has-glyphicons div.main-container
   }
 }
 
+/*articles*/
+
+article.article footer{
+  display: none;
+}
+
 /*FOOTER*/
 
 footer{
