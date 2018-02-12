@@ -23,12 +23,10 @@ body{
   padding-right: 0;
 }
 
-
-
-.navbar-brand,.article.is-promoted.full.clearfix h2 a,.field--label-hidden.field--item div#footer_infos p a,#footer_infos_en p a{
+.navbar-brand,.article h2 a,.field--label-hidden.field--item div#footer_infos p a,#footer_infos_en p a{
   color: rgb(255, 217, 94) !important;
 }
-.navbar-brand:hover,.article.is-promoted.full.clearfix h2 a:hover,.field--label-hidden.field--item div#footer_infos p a:hover,#footer_infos_en p a:hover{
+.navbar-brand:hover,.article h2 a:hover,.field--label-hidden.field--item div#footer_infos p a:hover,#footer_infos_en p a:hover{
   color: rgb(252, 223, 129) !important;  
 }
 
